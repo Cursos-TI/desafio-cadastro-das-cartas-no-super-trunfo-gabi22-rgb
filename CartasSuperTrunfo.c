@@ -6,9 +6,6 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste Gabriela karsburg 
 
-int main() {
-#include <stdio.h>
-#include<string.h>
 
 int main(){
      char estado1[49];
