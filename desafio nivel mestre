@@ -1,1 +1,64 @@
+#include <stdio.h>
+#include<string.h>
 
+int main(){
+     char estado1[49];
+     char esta[50];
+     char codcidade1[30];
+     char nomecid1[51];
+     char codcidade[31];
+     char nomecidade[52];
+     float populacao1,populacao;
+     int numponturistico1;                                                                
+     float areacid1,pib1,area,pib;
+     float densidade,pibpercapita1,denpo,pibpercapita2;
+     float resultP,resultA,resultPib,resultD,resultPi1;
+
+     printf("carta 1\n Digite o estado um: \n");
+     scanf("%s",&estado1);
+     printf("Digite o codigo da cidade um: \n");
+     scanf("%s",&codcidade1);
+     printf("Digite o nome da cidade um: \n");
+     scanf("%s",&nomecid1);
+     printf("Qual o numero da populacao da cidade um: \n");
+     scanf("%f",&populacao1);
+     printf("Digite a area da cidade um: \n");
+     scanf("%f",&areacid1);
+     printf("Digite o PIB da cidade: \n");
+     scanf("%f",&pib1);
+     printf("Digite o numero de pontos turisticos: \n");
+     scanf("%d",&numponturistico1);
+     printf("Carta 2/n Digite outro estado: \n");
+     scanf("%s",&esta);
+     printf("Digite o nome da cidade: \n");
+     scanf("%s",&nomecidade);
+     printf("Digite o codigo de outra cidade: \n");
+     scanf("%s",&codcidade);
+     printf("Qual o numero da populacao de outra cidade: \n");
+     scanf("%f",&populacao);
+     printf("Digite a area da cidade: \n");
+     scanf("%f",&area);
+     printf("Digite o PIB da cidade: \n");
+     scanf("%f",&pib);
+
+     densidade = populacao1 / areacid1;
+     denpo = populacao / area;
+     pibpercapita1 = pib1 / populacao1;
+     pibpercapita2 = pib / populacao;
+     resultP = populacao1 > populacao;
+     resultA = areacid1 >  area;
+     resultPib = pib1 > pib;
+     resultD = densidade < denpo;
+     resultPi1 = pibpercapita1 > pibpercapita2;
+
+
+   printf(" o estado um: %s \n o codigo da cidade um e: %s \n o nome da cidade um e: %s \n",estado1,codcidade1,nomecid1);
+   printf(" A populacao e de: %.2f \n A area da cidade e: %.2f \n o pib da cidade e: %.2f\n O numero de ponto turistico e: %d \n",populacao1,areacid1,pib1,numponturistico1);
+   printf("o outro estado e: %s \n o nome da outra cidade e: %s \n o codigo da outra cidade e: %s \n a populacao da outra cidade e: %.2f \n A area da outra cidade e: %.2f \n O pib da cidade e: %.2f \n",esta,nomecidade,codcidade,populacao,area,pib);
+   printf(" A densidade da carta um e: %.2f \n A densidade da carta dois e: %.2f \n",densidade,denpo);
+   printf(" O PIB da carta um e: %.2f \n O pib da carta dois e: %.2f \n",pibpercapita1,pibpercapita2);
+   printf("A populacao da carta1 for(1)carta1 venceu e se(0) Carta2 venceu: %.2f \n",resultP);
+   printf("A area da carta1 for(1)carta1 venceu e se(0) Carta2 venceu: %.2f \n",resultA);
+   printf("o pib da carta1 for(1)carta1 venceu e se(0) Carta2 venceu: %.2f \n",resultPib);
+   printf("A densidade da carta1 for(1)carta1 venceu e se(0) Carta2 venceu: %.2f \n",resultD);
+   printf("Se o pib per capita da carta1 for(1)carta1 venceu e se(0) Carta2 venceu: %.2f \n",resultPi1);
