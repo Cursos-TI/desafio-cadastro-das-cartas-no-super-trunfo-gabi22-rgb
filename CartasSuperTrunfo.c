@@ -7,10 +7,6 @@
 //Teste Gabriela karsburg 
 
 int main() {
-#include <stdio.h>
-#include<string.h>
-
-int main(){
      char estado1[49];
      char esta[50];
      char codcidade1[30];
